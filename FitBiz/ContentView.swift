@@ -9,10 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    
-    @Environment(\.modelContext) var context
-    @Query private var clients: [Client]
-    
     var body: some View {
         NavigationStack {
             ClientListView()
@@ -22,5 +18,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: Client.self)
+        .modelContainer(for: Client.self, inMemory: true)
 }

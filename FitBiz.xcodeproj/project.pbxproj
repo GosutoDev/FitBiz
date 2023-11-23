@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A83894E72B0FA9070003FC2B /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83894E62B0FA9070003FC2B /* ClientCell.swift */; };
+		A83894EB2B0FB4C10003FC2B /* ClientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83894EA2B0FB4C10003FC2B /* ClientDetailView.swift */; };
 		A88E4F8F2B0A7A09002CBB93 /* FitBizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */; };
 		A88E4F912B0A7A09002CBB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F902B0A7A09002CBB93 /* ContentView.swift */; };
 		A88E4F932B0A7A0D002CBB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E4F922B0A7A0D002CBB93 /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 		A83894E62B0FA9070003FC2B /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		A83894E82B0FAC250003FC2B /* FitBiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitBiz.entitlements; sourceTree = "<group>"; };
 		A83894E92B0FACC90003FC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A83894EA2B0FB4C10003FC2B /* ClientDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientDetailView.swift; path = "../../../../.Trash/FitBiz 17.01.37/FitBiz/Views/ClientDetailView.swift"; sourceTree = "<group>"; };
 		A88E4F8B2B0A7A09002CBB93 /* FitBiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBizApp.swift; sourceTree = "<group>"; };
 		A88E4F902B0A7A09002CBB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				A88E4FA22B0A7FDC002CBB93 /* AddClientView.swift */,
-				A88E4FD02B0F8E04002CBB93 /* Components */,
+				A88E4FD02B0F8E04002CBB93 /* Custom */,
 			);
 			path = AddClient;
 			sourceTree = "<group>";
@@ -113,6 +115,7 @@
 		A88E4FA02B0A7FB6002CBB93 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A83894EA2B0FB4C10003FC2B /* ClientDetailView.swift */,
 				A83894E52B0FA8F60003FC2B /* ClientList */,
 				A83894E42B0FA7240003FC2B /* AddClient */,
 			);
@@ -137,13 +140,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A88E4FD02B0F8E04002CBB93 /* Components */ = {
+		A88E4FD02B0F8E04002CBB93 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
 				A88E4FCA2B0F743A002CBB93 /* CustomTextField.swift */,
 				A88E4FD12B0F8E32002CBB93 /* CustomEditor.swift */,
 			);
-			path = Components;
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +229,7 @@
 				A88E4F8F2B0A7A09002CBB93 /* FitBizApp.swift in Sources */,
 				A88E4FA32B0A7FDC002CBB93 /* AddClientView.swift in Sources */,
 				A88E4F9D2B0A7A32002CBB93 /* Client.swift in Sources */,
+				A83894EB2B0FB4C10003FC2B /* ClientDetailView.swift in Sources */,
 				A88E4FCD2B0F75EB002CBB93 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,9 @@ import SwiftData
 
 struct AddClientView: View {
     
+    //
+    @Environment(\.colorScheme) private var colorScheme
+    
     // SwiftData context
     @Environment(\.modelContext) private var context
     
@@ -35,7 +38,7 @@ struct AddClientView: View {
                     returnType: .next,
                     isFocusable: $focused,
                     text: $firstName)
-                .listRowBackground(Color.rowBackground)
+                .listRowBackground(Color.getRowBackground(colorScheme))
                 .padding(.leading, 5)
                 
                 CustomTextField(
@@ -44,7 +47,7 @@ struct AddClientView: View {
                     returnType: .next,
                     isFocusable: $focused,
                     text: $secondName)
-                .listRowBackground(Color.rowBackground)
+                .listRowBackground(Color.getRowBackground(colorScheme))
                 .padding(.leading, 5)
                 
                 
@@ -53,7 +56,7 @@ struct AddClientView: View {
                         Text(paymentMethod.rawValue.capitalized).tag(paymentMethod)
                     }
                 }
-                .listRowBackground(Color.rowBackground)
+                .listRowBackground(Color.getRowBackground(colorScheme))
                 .padding(.leading, 5)
                 
                 
@@ -68,7 +71,7 @@ struct AddClientView: View {
                     
                     CustomEditor(text: $comment, isFocusable: $focused, tag: 2)
                 }
-                .listRowBackground(Color.rowBackground)
+                .listRowBackground(Color.getRowBackground(colorScheme))
             }
             .scrollContentBackground(.hidden)
             .navigationTitle("Add client")
@@ -115,6 +118,6 @@ extension AddClientView {
 //MARK: Preview
 #Preview {
     AddClientView(isPresented: .constant(false))
-        .modelContainer(for: Client.self)
+        .modelContainer(for: Client.self, inMemory: true)
 }
 

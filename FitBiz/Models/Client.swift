@@ -10,10 +10,10 @@ import SwiftData
 
 @Model
 final class Client {
-    var firstName: String?
-    var secondName: String?
-    var comment: String?
-    var paymentMethod: PaymentMethod?
+    var firstName: String!
+    var secondName: String!
+    var comment: String!
+    var paymentMethod: PaymentMethod!
     
     init(firstName: String, secondName: String, comment: String, paymentMethod: PaymentMethod) {
         self.firstName = firstName

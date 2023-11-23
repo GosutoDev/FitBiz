@@ -10,6 +10,9 @@ import SwiftData
 
 struct ClientListView: View {
     
+    // COlorScheme
+    @Environment(\.colorScheme) var colorScheme
+    
     // SwiftData
     @Environment(\.modelContext) var context
     @Query(sort: \Client.firstName) private var clients: [Client]
@@ -20,19 +23,19 @@ struct ClientListView: View {
     var body: some View {
         List {
             ForEach(clients) { client in
-                NavigationLink {
-                    
-                } label: {
+                NavigationLink(value: client) {
                     ClientCell(
-                        firstName: client.firstName ?? "",
-                        secondName: client.secondName ?? "",
-                        paymentMethod: client.paymentMethod ?? .card)
+                        firstName: client.firstName,
+                        secondName: client.secondName,
+                        paymentMethod: client.paymentMethod)
                 }
-
+                .listRowBackground(Color.getRowBackground(colorScheme))
             }
             .onDelete(perform: deleteClient)
         }
+        .scrollContentBackground(.hidden)
         .navigationTitle("Clients")
+        .navigationDestination(for: Client.self, destination: ClientDetailView.init)
         
         // Toolbar buttons
         .toolbar {
@@ -49,6 +52,7 @@ struct ClientListView: View {
         .sheet(isPresented: $isPresented, content: {
             AddClientView(isPresented: $isPresented)
                 .presentationDetents([.medium])
+               
         })
     }
 }
@@ -65,6 +69,6 @@ extension ClientListView {
 #Preview {
     NavigationStack {
         ClientListView()
-            .modelContainer(for: Client.self)
+            .modelContainer(for: Client.self, inMemory: true)
     }
 }

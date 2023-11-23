@@ -29,6 +29,9 @@ struct CustomTextField: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UITextField, context: Context) {
+        
+        uiView.text = text
+        
         if isFocusable[tag] {
             uiView.becomeFirstResponder()
         }
