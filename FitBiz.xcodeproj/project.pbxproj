@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A83894E72B0FA9070003FC2B /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83894E62B0FA9070003FC2B /* ClientCell.swift */; };
+		A88E4F8F2B0A7A09002CBB93 /* FitBizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */; };
+		A88E4F912B0A7A09002CBB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F902B0A7A09002CBB93 /* ContentView.swift */; };
+		A88E4F932B0A7A0D002CBB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E4F922B0A7A0D002CBB93 /* Assets.xcassets */; };
+		A88E4F962B0A7A0D002CBB93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88E4F952B0A7A0D002CBB93 /* Preview Assets.xcassets */; };
+		A88E4F9D2B0A7A32002CBB93 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F9C2B0A7A32002CBB93 /* Client.swift */; };
+		A88E4F9F2B0A7F83002CBB93 /* ClientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F9E2B0A7F83002CBB93 /* ClientListView.swift */; };
+		A88E4FA32B0A7FDC002CBB93 /* AddClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FA22B0A7FDC002CBB93 /* AddClientView.swift */; };
+		A88E4FC72B0F6669002CBB93 /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FC62B0F6669002CBB93 /* UITextView.swift */; };
+		A88E4FC92B0F6696002CBB93 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FC82B0F6696002CBB93 /* UITextField.swift */; };
+		A88E4FCB2B0F743A002CBB93 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FCA2B0F743A002CBB93 /* CustomTextField.swift */; };
+		A88E4FCD2B0F75EB002CBB93 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FCC2B0F75EA002CBB93 /* Color.swift */; };
+		A88E4FD22B0F8E32002CBB93 /* CustomEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4FD12B0F8E32002CBB93 /* CustomEditor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A83894E62B0FA9070003FC2B /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
+		A83894E82B0FAC250003FC2B /* FitBiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitBiz.entitlements; sourceTree = "<group>"; };
+		A83894E92B0FACC90003FC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A88E4F8B2B0A7A09002CBB93 /* FitBiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitBiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitBizApp.swift; sourceTree = "<group>"; };
+		A88E4F902B0A7A09002CBB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A88E4F922B0A7A0D002CBB93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A88E4F952B0A7A0D002CBB93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A88E4F9C2B0A7A32002CBB93 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		A88E4F9E2B0A7F83002CBB93 /* ClientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListView.swift; sourceTree = "<group>"; };
+		A88E4FA22B0A7FDC002CBB93 /* AddClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientView.swift; sourceTree = "<group>"; };
+		A88E4FC62B0F6669002CBB93 /* UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		A88E4FC82B0F6696002CBB93 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		A88E4FCA2B0F743A002CBB93 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A88E4FCC2B0F75EA002CBB93 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		A88E4FD12B0F8E32002CBB93 /* CustomEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEditor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A88E4F882B0A7A09002CBB93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A83894E42B0FA7240003FC2B /* AddClient */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4FA22B0A7FDC002CBB93 /* AddClientView.swift */,
+				A88E4FD02B0F8E04002CBB93 /* Components */,
+			);
+			path = AddClient;
+			sourceTree = "<group>";
+		};
+		A83894E52B0FA8F60003FC2B /* ClientList */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4F9E2B0A7F83002CBB93 /* ClientListView.swift */,
+				A83894E62B0FA9070003FC2B /* ClientCell.swift */,
+			);
+			path = ClientList;
+			sourceTree = "<group>";
+		};
+		A88E4F822B0A7A09002CBB93 = {
+			isa = PBXGroup;
+			children = (
+				A88E4F8D2B0A7A09002CBB93 /* FitBiz */,
+				A88E4F8C2B0A7A09002CBB93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A88E4F8C2B0A7A09002CBB93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4F8B2B0A7A09002CBB93 /* FitBiz.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A88E4F8D2B0A7A09002CBB93 /* FitBiz */ = {
+			isa = PBXGroup;
+			children = (
+				A83894E92B0FACC90003FC2B /* Info.plist */,
+				A83894E82B0FAC250003FC2B /* FitBiz.entitlements */,
+				A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */,
+				A88E4F902B0A7A09002CBB93 /* ContentView.swift */,
+				A88E4FC52B0F6654002CBB93 /* Extensions */,
+				A88E4FA02B0A7FB6002CBB93 /* Views */,
+				A88E4FA12B0A7FC9002CBB93 /* Models */,
+				A88E4F922B0A7A0D002CBB93 /* Assets.xcassets */,
+				A88E4F942B0A7A0D002CBB93 /* Preview Content */,
+			);
+			path = FitBiz;
+			sourceTree = "<group>";
+		};
+		A88E4F942B0A7A0D002CBB93 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4F952B0A7A0D002CBB93 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A88E4FA02B0A7FB6002CBB93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A83894E52B0FA8F60003FC2B /* ClientList */,
+				A83894E42B0FA7240003FC2B /* AddClient */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A88E4FA12B0A7FC9002CBB93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4F9C2B0A7A32002CBB93 /* Client.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A88E4FC52B0F6654002CBB93 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4FC62B0F6669002CBB93 /* UITextView.swift */,
+				A88E4FC82B0F6696002CBB93 /* UITextField.swift */,
+				A88E4FCC2B0F75EA002CBB93 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A88E4FD02B0F8E04002CBB93 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A88E4FCA2B0F743A002CBB93 /* CustomTextField.swift */,
+				A88E4FD12B0F8E32002CBB93 /* CustomEditor.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A88E4F8A2B0A7A09002CBB93 /* FitBiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A88E4F992B0A7A0D002CBB93 /* Build configuration list for PBXNativeTarget "FitBiz" */;
+			buildPhases = (
+				A88E4F872B0A7A09002CBB93 /* Sources */,
+				A88E4F882B0A7A09002CBB93 /* Frameworks */,
+				A88E4F892B0A7A09002CBB93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FitBiz;
+			productName = FitBiz;
+			productReference = A88E4F8B2B0A7A09002CBB93 /* FitBiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A88E4F832B0A7A09002CBB93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A88E4F8A2B0A7A09002CBB93 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = A88E4F862B0A7A09002CBB93 /* Build configuration list for PBXProject "FitBiz" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A88E4F822B0A7A09002CBB93;
+			productRefGroup = A88E4F8C2B0A7A09002CBB93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A88E4F8A2B0A7A09002CBB93 /* FitBiz */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A88E4F892B0A7A09002CBB93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88E4F962B0A7A0D002CBB93 /* Preview Assets.xcassets in Resources */,
+				A88E4F932B0A7A0D002CBB93 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A88E4F872B0A7A09002CBB93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A88E4F912B0A7A09002CBB93 /* ContentView.swift in Sources */,
+				A88E4FC72B0F6669002CBB93 /* UITextView.swift in Sources */,
+				A88E4FC92B0F6696002CBB93 /* UITextField.swift in Sources */,
+				A88E4F9F2B0A7F83002CBB93 /* ClientListView.swift in Sources */,
+				A88E4FCB2B0F743A002CBB93 /* CustomTextField.swift in Sources */,
+				A88E4FD22B0F8E32002CBB93 /* CustomEditor.swift in Sources */,
+				A83894E72B0FA9070003FC2B /* ClientCell.swift in Sources */,
+				A88E4F8F2B0A7A09002CBB93 /* FitBizApp.swift in Sources */,
+				A88E4FA32B0A7FDC002CBB93 /* AddClientView.swift in Sources */,
+				A88E4F9D2B0A7A32002CBB93 /* Client.swift in Sources */,
+				A88E4FCD2B0F75EB002CBB93 /* Color.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A88E4F972B0A7A0D002CBB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A88E4F982B0A7A0D002CBB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A88E4F9A2B0A7A0D002CBB93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitBiz/FitBiz.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 6A744UV7PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitBiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomasduchoslav.FitBiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A88E4F9B2B0A7A0D002CBB93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FitBiz/FitBiz.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FitBiz/Preview Content\"";
+				DEVELOPMENT_TEAM = 6A744UV7PU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FitBiz/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomasduchoslav.FitBiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A88E4F862B0A7A09002CBB93 /* Build configuration list for PBXProject "FitBiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88E4F972B0A7A0D002CBB93 /* Debug */,
+				A88E4F982B0A7A0D002CBB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A88E4F992B0A7A0D002CBB93 /* Build configuration list for PBXNativeTarget "FitBiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A88E4F9A2B0A7A0D002CBB93 /* Debug */,
+				A88E4F9B2B0A7A0D002CBB93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A88E4F832B0A7A09002CBB93 /* Project object */;
+}
