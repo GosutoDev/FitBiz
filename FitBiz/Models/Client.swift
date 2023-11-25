@@ -23,6 +23,7 @@ final class Client {
     }
 }
 
+// Enum
 extension Client {
     enum PaymentMethod: String, CaseIterable, Codable {
         case cash
@@ -30,6 +31,7 @@ extension Client {
     }
 }
 
+// Sample data
 extension Client {
     static let clients: [Client] = [
         Client(firstName: "Tomas", secondName: "Duchoslav", comment: "jeden", paymentMethod: .cash),

@@ -50,7 +50,6 @@ struct AddClientView: View {
                 .listRowBackground(Color.sheetRowBackground)
                 .padding(.leading, 5)
                 
-                
                 Picker("Payment method:", selection: $paymentMethod) {
                     ForEach(Client.PaymentMethod.allCases, id: \.self) { paymentMethod in
                         Text(paymentMethod.rawValue.capitalized).tag(paymentMethod)
@@ -58,7 +57,6 @@ struct AddClientView: View {
                 }
                 .listRowBackground(Color.sheetRowBackground)
                 .padding(.leading, 5)
-                
                 
                 // Editor with placeholder
                 ZStack(alignment: .topLeading) {

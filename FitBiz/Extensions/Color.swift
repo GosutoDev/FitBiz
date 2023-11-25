@@ -13,9 +13,3 @@ extension Color {
     static let creditCard: Color = Color(#colorLiteral(red: 0.5738074183, green: 0.5655357838, blue: 0, alpha: 1))
     
 }
-
-extension Image {
-    static func getPaymentMethodImage(_ paymentMethod: Client.PaymentMethod) -> Image {
-        return Image(systemName: paymentMethod == .cash ? "banknote.fill" : "creditcard.fill").font(.subheadline).foregroundStyle(paymentMethod == .cash ? Color.banknote : Color.creditCard) as! Image
-    }
-}
