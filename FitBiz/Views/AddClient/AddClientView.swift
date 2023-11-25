@@ -38,7 +38,7 @@ struct AddClientView: View {
                     returnType: .next,
                     isFocusable: $focused,
                     text: $firstName)
-                .listRowBackground(Color.getRowBackground(colorScheme))
+                .listRowBackground(Color.sheetRowBackground)
                 .padding(.leading, 5)
                 
                 CustomTextField(
@@ -47,7 +47,7 @@ struct AddClientView: View {
                     returnType: .next,
                     isFocusable: $focused,
                     text: $secondName)
-                .listRowBackground(Color.getRowBackground(colorScheme))
+                .listRowBackground(Color.sheetRowBackground)
                 .padding(.leading, 5)
                 
                 
@@ -56,7 +56,7 @@ struct AddClientView: View {
                         Text(paymentMethod.rawValue.capitalized).tag(paymentMethod)
                     }
                 }
-                .listRowBackground(Color.getRowBackground(colorScheme))
+                .listRowBackground(Color.sheetRowBackground)
                 .padding(.leading, 5)
                 
                 
@@ -66,12 +66,12 @@ struct AddClientView: View {
                         Text("Write some comment..")
                             .padding(.leading, 5)
                             .padding(.top, 8)
-                            .foregroundStyle(.black.opacity(0.25))
+                            .foregroundStyle(.primary.opacity(0.25))
                     }
                     
                     CustomEditor(text: $comment, isFocusable: $focused, tag: 2)
                 }
-                .listRowBackground(Color.getRowBackground(colorScheme))
+                .listRowBackground(Color.sheetRowBackground)
             }
             .scrollContentBackground(.hidden)
             .navigationTitle("Add client")

@@ -10,12 +10,9 @@ import SwiftData
 
 struct ClientListView: View {
     
-    // COlorScheme
-    @Environment(\.colorScheme) var colorScheme
-    
     // SwiftData
     @Environment(\.modelContext) var context
-    @Query(sort: \Client.firstName) private var clients: [Client]
+    @Query(sort: \Client.secondName) private var clients: [Client]
     
     // Handle the sheet
     @State private var isPresented: Bool = false
@@ -29,7 +26,7 @@ struct ClientListView: View {
                         secondName: client.secondName,
                         paymentMethod: client.paymentMethod)
                 }
-                .listRowBackground(Color.getRowBackground(colorScheme))
+                .listRowBackground(Color.rowBackground)
             }
             .onDelete(perform: deleteClient)
         }
@@ -39,7 +36,13 @@ struct ClientListView: View {
         
         // Toolbar buttons
         .toolbar {
-            ToolbarItem {
+            ToolbarItemGroup {
+                Button {
+                    addSampleData()
+                } label: {
+                    Image(systemName: "plus.forwardslash.minus")
+                }
+                
                 Button {
                     isPresented.toggle()
                 } label: {
@@ -52,7 +55,7 @@ struct ClientListView: View {
         .sheet(isPresented: $isPresented, content: {
             AddClientView(isPresented: $isPresented)
                 .presentationDetents([.medium])
-               
+            
         })
     }
 }
@@ -62,6 +65,12 @@ extension ClientListView {
     private func deleteClient(indexSet: IndexSet) {
         for index in indexSet {
             context.delete(clients[index])
+        }
+    }
+    
+    private func addSampleData() {
+        for client in Client.clients {
+            context.insert(client)
         }
     }
 }

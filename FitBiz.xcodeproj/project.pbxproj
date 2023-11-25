@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82E16EF2B1243CC00685F97 /* PaymentMethodImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82E16EE2B1243CC00685F97 /* PaymentMethodImage.swift */; };
 		A83894E72B0FA9070003FC2B /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83894E62B0FA9070003FC2B /* ClientCell.swift */; };
 		A83894EB2B0FB4C10003FC2B /* ClientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83894EA2B0FB4C10003FC2B /* ClientDetailView.swift */; };
 		A88E4F8F2B0A7A09002CBB93 /* FitBizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A82E16EE2B1243CC00685F97 /* PaymentMethodImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodImage.swift; sourceTree = "<group>"; };
 		A83894E62B0FA9070003FC2B /* ClientCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		A83894E82B0FAC250003FC2B /* FitBiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitBiz.entitlements; sourceTree = "<group>"; };
 		A83894E92B0FACC90003FC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A82E16ED2B1243B600685F97 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A82E16EE2B1243CC00685F97 /* PaymentMethodImage.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		A83894E42B0FA7240003FC2B /* AddClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +105,7 @@
 				A83894E82B0FAC250003FC2B /* FitBiz.entitlements */,
 				A88E4F8E2B0A7A09002CBB93 /* FitBizApp.swift */,
 				A88E4F902B0A7A09002CBB93 /* ContentView.swift */,
+				A82E16ED2B1243B600685F97 /* Components */,
 				A88E4FC52B0F6654002CBB93 /* Extensions */,
 				A88E4FA02B0A7FB6002CBB93 /* Views */,
 				A88E4FA12B0A7FC9002CBB93 /* Models */,
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A88E4F912B0A7A09002CBB93 /* ContentView.swift in Sources */,
+				A82E16EF2B1243CC00685F97 /* PaymentMethodImage.swift in Sources */,
 				A88E4FC72B0F6669002CBB93 /* UITextView.swift in Sources */,
 				A88E4FC92B0F6696002CBB93 /* UITextField.swift in Sources */,
 				A88E4F9F2B0A7F83002CBB93 /* ClientListView.swift in Sources */,

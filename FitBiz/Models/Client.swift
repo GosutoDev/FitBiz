@@ -29,3 +29,19 @@ extension Client {
         case card
     }
 }
+
+extension Client {
+    static let clients: [Client] = [
+        Client(firstName: "Tomas", secondName: "Duchoslav", comment: "jeden", paymentMethod: .cash),
+        Client(firstName: "Lukas", secondName: "Cakora", comment: "dva", paymentMethod: .cash),
+        Client(firstName: "Michal", secondName: "Cimbora", comment: "tri", paymentMethod: .card),
+        Client(firstName: "Milan", secondName: "Konecny", comment: "ctyri", paymentMethod: .card),
+        Client(firstName: "Jan", secondName: "Vejmelka", comment: "pet", paymentMethod: .cash),
+        Client(firstName: "Lubomir", secondName: "Rujbr", comment: "sest", paymentMethod: .cash),
+        Client(firstName: "Patrik", secondName: "Kalivoda", comment: "sedm", paymentMethod: .card),
+        Client(firstName: "Petr", secondName: "Oslejsek", comment: "osm", paymentMethod: .cash),
+        Client(firstName: "Ondra", secondName: "Vacek", comment: "devet", paymentMethod: .card),
+        Client(firstName: "Michal", secondName: "Svetlik", comment: "deset", paymentMethod: .cash)
+        
+    ]
+}

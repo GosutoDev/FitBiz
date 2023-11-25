@@ -23,7 +23,6 @@ struct FitBizApp: App {
             }
         }()
     
-    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -24,9 +24,8 @@ struct ClientCell: View {
             HStack(spacing: 3) {
                 Text("Payment by")
                 Text(paymentMethod.rawValue)
-                Image(systemName: paymentMethod == .cash ? "banknote.fill" : "creditcard.fill")
+                PaymentMethodImage(paymentMethod: paymentMethod)
                     .font(.caption)
-                    .foregroundStyle(paymentMethod == .cash ? Color.banknote : Color.creditCard)
             }
             .font(.caption2)
         }
